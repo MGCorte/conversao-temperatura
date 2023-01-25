@@ -9,8 +9,7 @@ A aplicação é exposta usando a porta 8080
 ### Criando Cluster
 Cluster criado com a instrução
 
-$ k3d cluster create meucluster -p "80:30000@loadbalancer" 
-$
+k3d cluster create meucluster -p "80:30000@loadbalancer"
 
 ### Deploy
 kubectl apply -f k8s/deployment.yaml
